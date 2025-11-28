@@ -13,7 +13,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    dockerImage = docker.build("omkar/demo-app:${BUILD_NUMBER}")
+                    dockerImage = docker.build("omkar8284/jenkins-demo:${BUILD_NUMBER}")
                 }
             }
         }
