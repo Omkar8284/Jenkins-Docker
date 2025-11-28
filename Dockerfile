@@ -1,2 +1,2 @@
-FROM alpine:latest
-CMD ["echo", "Hello from CI/CD Pipeline!"]
+FROM nginx:alpine
+COPY index.html /usr/share/nginx/html/index.html
