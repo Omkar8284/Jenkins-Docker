@@ -37,7 +37,8 @@ pipeline {
                             docker pull omkar8284/jenkins-demo:latest &&
                             docker stop demo-app || true &&
                             docker rm demo-app || true &&
-                            docker run -d --name demo-app omkar8284/jenkins-demo:latest
+                            docker run -d -p 80:80 --name demo-app omkar8284/jenkins-demo:latest
+
                         "
                     '''
                 }
